@@ -1,0 +1,146 @@
+body {
+	background-color: #0d253f;
+	color: snow;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+	max-width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 {
+	color: snow;
+}
+
+input[type="text"] {
+	width: 300px;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 0.5rem;
+	border: none;
+}
+input::selection {
+	color: inherit; /* Usa el color de texto por defecto */
+	outline: none; /* Quita el borde sombreado */
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 1rem;
+	background-color: snow;
+	color: #0d253f;
+	border: none;
+	cursor: pointer;
+	border-radius: 0.5rem;
+}
+
+#results {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-top: 20px;
+}
+
+.movie {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 8rem;
+	height: 200px;
+	max-width: 150px;
+	max-height: 300px;
+	padding: 0.5rem;
+	background-color: #194675;
+	border-radius: 5px;
+	box-shadow: 0 0 1rem -0.5rem rgb(0, 0, 0.25);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.movie:hover {
+	background-color: #2467af;
+}
+
+.movie img {
+	width: 100px;
+	float: left;
+	border-radius: 0.5rem;
+}
+
+.movie h2 {
+	font-size: 18px;
+	margin-top: 0;
+}
+
+.movie h4 {
+	font-size: 0.4rem;
+	margin-top: 0.5rem;
+}
+
+/* --------------------------------- Estilos MOVIE DETAILS*/
+
+#containerDetails {
+	width: fit-content;
+	display: flex;
+	margin-inline: 2rem;
+	padding: 1rem;
+   margin: 1rem;
+	padding-top: 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #194675;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 1rem -0.5rem rgb(0, 0, 0.25);
+}
+
+.containerMovieDetails {
+	display: flex;
+	gap: 1rem;
+ 
+}
+.movieTitle {
+	margin: 0;
+	padding-inline: 1rem;
+  padding-top: .5rem;
+	font-size: 2rem;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	margin-bottom: 1rem;
+}
+
+.containerImage {
+	width: 60%;
+	display: flex;
+	align-items: center;
+}
+.movieImg {
+	width: 100%;
+	min-width: 10rem;
+	border-radius: 0.5rem;
+}
+
+.buttonReturn {
+	position: absolute;
+	padding: 0.5rem;
+	font-size: 0.5rem;
+	background-color: snow;
+	color: #0d253f;
+	border: none;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	top: 2rem;
+	right: 3.5rem;
+	box-shadow: 0 0 1rem -0.2rem rgb(0, 0, 0.25);
+	transition: 0.5s;
+}
+
+.buttonReturn:hover {
+	transform: scale(1.1);
+}
